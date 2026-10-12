@@ -1,0 +1,327 @@
+// ===============================================================================
+// dax_measures.dax
+// Project: Sales Performance Dashboard (Power BI + SSMS / SQL Server)
+// Table: _Measures (Dedicated Measure Table)
+// Description: Production-grade DAX measures library organized by display folders.
+// ===============================================================================
+
+// -------------------------------------------------------------------------------
+// 01 Core Financials
+// -------------------------------------------------------------------------------
+
+Total Sales = 
+SUM(FactSalesOrders[NetSales])
+// Format: Currency ($#,##0)
+// Description: Net recognized revenue after trade discounts.
+
+Total Extended Price = 
+SUM(FactSalesOrders[ExtendedPrice])
+// Format: Currency ($#,##0)
+// Description: Gross sales value before discounts (Quantity * Unit Price).
+
+Total Cost = 
+SUM(FactSalesOrders[TotalCost])
+// Format: Currency ($#,##0)
+// Description: Total cost of goods sold (Quantity * Unit Cost).
+
+Total Discount = 
+SUM(FactSalesOrders[DiscountAmount])
+// Format: Currency ($#,##0)
+// Description: Aggregate discount amount granted across transactions.
+
+Discount Rate % = 
+DIVIDE([Total Discount], [Total Extended Price], 0)
+// Format: Percentage (0.0%)
+// Description: Effective discount percentage on gross volume.
+
+Gross Profit = 
+[Total Sales] - [Total Cost]
+// Format: Currency ($#,##0)
+// Description: Net profit margin in dollars.
+
+Gross Margin % = 
+DIVIDE([Gross Profit], [Total Sales], 0)
+// Format: Percentage (0.0%)
+// Description: Profit margin percentage on net sales.
+
+Total Orders = 
+DISTINCTCOUNT(FactSalesOrders[OrderID])
+// Format: Whole Number (#,##0)
+// Description: Unique order transaction count.
+
+Total Units Sold = 
+SUM(FactSalesOrders[OrderQuantity])
+// Format: Whole Number (#,##0)
+// Description: Aggregate quantity of product units sold.
+
+Average Order Value = 
+DIVIDE([Total Sales], [Total Orders], 0)
+// Format: Currency ($#,##0)
+// Description: Average revenue generated per unique sales order.
+
+Average Unit Selling Price = 
+DIVIDE([Total Sales], [Total Units Sold], 0)
+// Format: Currency ($#,##0.00)
+// Description: Average realized selling price per unit.
+
+
+// -------------------------------------------------------------------------------
+// 02 Targets & Quotas
+// -------------------------------------------------------------------------------
+
+Target Sales = 
+SUM(FactSalesQuota[TargetAmount])
+// Format: Currency ($#,##0)
+// Description: Monthly sales quota amount assigned to reps and territories.
+
+Target Units = 
+SUM(FactSalesQuota[TargetUnits])
+// Format: Whole Number (#,##0)
+// Description: Monthly sales quota target in units.
+
+Variance to Target $ = 
+[Total Sales] - [Target Sales]
+// Format: Currency ($#,##0);($#,##0);"-"
+// Description: Dollar variance above (positive) or below (negative) quota target.
+
+Quota Attainment % = 
+DIVIDE([Total Sales], [Target Sales], 0)
+// Format: Percentage (0.0%)
+// Description: Percentage of target quota achieved.
+
+Attainment Status Icon = 
+VAR Attainment = [Quota Attainment %]
+RETURN
+    SWITCH(
+        TRUE(),
+        ISBLANK(Attainment), BLANK(),
+        Attainment >= 1.00, "🟢 Exceeded",
+        Attainment >= 0.85, "🟡 On Track",
+        "🔴 Behind"
+    )
+// Description: Text indicator with colored emoji for tables and matrix tooltips.
+
+Attainment Status Color KPI = 
+VAR Attainment = [Quota Attainment %]
+RETURN
+    SWITCH(
+        TRUE(),
+        ISBLANK(Attainment), "#94A3B8", // Slate Gray
+        Attainment >= 1.00, "#10B981",  // Emerald Green
+        Attainment >= 0.85, "#F59E0B",  // Amber Warning
+        "#EF4444"                       // Crimson Danger
+    )
+// Description: Hex color code for Power BI Conditional Formatting (Font Color / Background).
+
+
+// -------------------------------------------------------------------------------
+// 03 Time Intelligence (YoY & YTD)
+// -------------------------------------------------------------------------------
+
+Sales PY = 
+CALCULATE(
+    [Total Sales],
+    SAMEPERIODLASTYEAR(DimDate[FullDate])
+)
+// Format: Currency ($#,##0)
+// Description: Net sales for the exact same period in the prior year.
+
+Sales YoY Growth $ = 
+VAR PriorYear = [Sales PY]
+RETURN
+    IF(
+        NOT ISBLANK(PriorYear),
+        [Total Sales] - PriorYear,
+        BLANK()
+    )
+// Format: Currency ($#,##0);($#,##0);"-"
+// Description: Absolute dollar variance compared to prior year.
+
+Sales YoY Growth % = 
+VAR PriorYear = [Sales PY]
+VAR GrowthDollar = [Total Sales] - PriorYear
+RETURN
+    DIVIDE(GrowthDollar, PriorYear, 0)
+// Format: Percentage (+0.0%;-0.0%;0.0%)
+// Description: Percentage growth compared to prior year.
+
+Sales YoY Callout Badge = 
+VAR GrowthPct = [Sales YoY Growth %]
+RETURN
+    IF(
+        ISBLANK(GrowthPct),
+        "vs PY: N/A",
+        IF(
+            GrowthPct >= 0,
+            "▲ +" & FORMAT(GrowthPct, "0.0%") & " vs PY",
+            "▼ " & FORMAT(GrowthPct, "0.0%") & " vs PY"
+        )
+    )
+// Description: Dynamic badge string for Modern KPI Card sub-labels.
+
+Gross Profit PY = 
+CALCULATE(
+    [Gross Profit],
+    SAMEPERIODLASTYEAR(DimDate[FullDate])
+)
+// Format: Currency ($#,##0)
+// Description: Gross profit for the prior year period.
+
+Gross Profit YoY Growth % = 
+DIVIDE([Gross Profit] - [Gross Profit PY], [Gross Profit PY], 0)
+// Format: Percentage (+0.0%;-0.0%;0.0%)
+
+Sales YTD = 
+TOTALYTD(
+    [Total Sales],
+    DimDate[FullDate]
+)
+// Format: Currency ($#,##0)
+// Description: Year-to-date cumulative net sales.
+
+Sales PY YTD = 
+TOTALYTD(
+    [Sales PY],
+    DimDate[FullDate]
+)
+// Format: Currency ($#,##0)
+// Description: Prior year cumulative sales up to the corresponding day.
+
+Sales YoY YTD Growth % = 
+VAR CurrentYTD = [Sales YTD]
+VAR PriorYTD = [Sales PY YTD]
+RETURN
+    DIVIDE(CurrentYTD - PriorYTD, PriorYTD, 0)
+// Format: Percentage (+0.0%;-0.0%;0.0%)
+
+Sales MTD = 
+TOTALMTD(
+    [Total Sales],
+    DimDate[FullDate]
+)
+// Format: Currency ($#,##0)
+// Description: Month-to-date cumulative net sales.
+
+Sales QTD = 
+TOTALQTD(
+    [Total Sales],
+    DimDate[FullDate]
+)
+// Format: Currency ($#,##0)
+// Description: Quarter-to-date cumulative net sales.
+
+
+// -------------------------------------------------------------------------------
+// 04 Sales Rep Analytics & Leaderboard
+// -------------------------------------------------------------------------------
+
+Sales Rep Rank = 
+IF(
+    ISINSCOPE(DimSalesRep[FullName]),
+    RANKX(
+        ALLSELECTED(DimSalesRep[FullName]),
+        [Total Sales],
+        ,
+        DESC,
+        DENSE
+    )
+)
+// Format: Whole Number (#)
+// Description: Rank order of sales representatives based on total net revenue.
+
+Top 5 Sales Rep Revenue = 
+IF(
+    [Sales Rep Rank] <= 5,
+    [Total Sales],
+    BLANK()
+)
+// Description: Filters visualization to only Top 5 sales reps.
+
+Average Sales Per Rep = 
+AVERAGEX(
+    VALUES(DimSalesRep[FullName]),
+    [Total Sales]
+)
+// Format: Currency ($#,##0)
+// Description: Benchmark average revenue across all active sales reps.
+
+Active Sales Reps Count = 
+DISTINCTCOUNT(FactSalesOrders[SalesRepKey])
+// Format: Whole Number (#,##0)
+// Description: Number of reps who closed at least one deal in context.
+
+
+// -------------------------------------------------------------------------------
+// 05 Product & Customer Analytics (Pareto / 80-20 Analysis)
+// -------------------------------------------------------------------------------
+
+Product Rank = 
+IF(
+    ISINSCOPE(DimProduct[ProductName]),
+    RANKX(
+        ALLSELECTED(DimProduct[ProductName]),
+        [Total Sales],
+        ,
+        DESC,
+        DENSE
+    )
+)
+// Format: Whole Number (#)
+
+Customer Rank = 
+IF(
+    ISINSCOPE(DimCustomer[CustomerName]),
+    RANKX(
+        ALLSELECTED(DimCustomer[CustomerName]),
+        [Total Sales],
+        ,
+        DESC,
+        DENSE
+    )
+)
+// Format: Whole Number (#)
+
+All Product Sales = 
+CALCULATE(
+    [Total Sales],
+    ALLSELECTED(DimProduct)
+)
+// Description: Denominator for product share calculation.
+
+Product Share of Total % = 
+DIVIDE([Total Sales], [All Product Sales], 0)
+// Format: Percentage (0.0%)
+// Description: Contribution percentage of selected product/category.
+
+Pareto Cumulative Product Sales = 
+VAR CurrentProductSales = [Total Sales]
+VAR CurrentRank = [Product Rank]
+RETURN
+    IF(
+        NOT ISBLANK(CurrentProductSales),
+        SUMX(
+            FILTER(
+                ALLSELECTED(DimProduct[ProductName]),
+                VAR ItemRank = 
+                    RANKX(
+                        ALLSELECTED(DimProduct[ProductName]),
+                        [Total Sales],
+                        ,
+                        DESC,
+                        DENSE
+                    )
+                RETURN ItemRank <= CurrentRank
+            ),
+            [Total Sales]
+        )
+    )
+// Description: Cumulative sum of sales from highest ranked product down to current rank.
+
+Pareto Cumulative % = 
+DIVIDE(
+    [Pareto Cumulative Product Sales],
+    [All Product Sales],
+    0
+)
+// Format: Percentage (0.0%)
+// Description: Running percentage of sales for 80/20 rule visual line.
