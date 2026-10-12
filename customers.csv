@@ -1,0 +1,251 @@
+CustomerID,CustomerName,CustomerType,Industry,City,StateProvince,Country,TerritoryID
+1,Horizon Technologies,Enterprise,Healthcare & Pharma,London,Greater London,UK,5
+2,Ironclad Financial,Enterprise,Healthcare & Pharma,Rio de Janeiro,Rio de Janeiro,Brazil,10
+3,Atlas Healthcare,Enterprise,Retail & E-Commerce,Seoul,Gyeonggi,South Korea,9
+4,Ironclad Solutions,Mid-Market,FinTech & Banking,Vancouver,British Columbia,Canada,4
+5,Starlight Global,Mid-Market,Retail & E-Commerce,Brussels,Brussels,Belgium,7
+6,Vanguard Financial,Enterprise,Telecommunications,Boston,Massachusetts,USA,2
+7,Dynamic Retail Group,Mid-Market,Healthcare & Pharma,Los Angeles,California,USA,1
+8,BlueWave Financial,SMB,Telecommunications,Osaka,Kansai,Japan,9
+9,Summit Healthcare,Mid-Market,Government & Education,New York,New York,USA,2
+10,Quantum Holdings,Mid-Market,Professional Services,Toronto,Ontario,Canada,4
+11,Crestview Logistics,Enterprise,Government & Education,Munich,Bavaria,Germany,6
+12,Quantum Consulting,SMB,Manufacturing,Minneapolis,Minnesota,USA,3
+13,Aero Solutions,Mid-Market,Retail & E-Commerce,Edinburgh,Midlothian,UK,5
+14,Vanguard Holdings,SMB,Telecommunications,San Francisco,California,USA,1
+15,BlueWave Retail Group,Strategic Key Account,Telecommunications,New York,New York,USA,2
+16,Atlas Aerospace,SMB,Professional Services,Melbourne,Victoria,Australia,8
+17,Pinnacle Retail Group,SMB,Government & Education,Chicago,Illinois,USA,3
+18,Summit Solutions,Mid-Market,Manufacturing,Rio de Janeiro,Rio de Janeiro,Brazil,10
+19,Cyber Media,SMB,Manufacturing,New York,New York,USA,2
+20,Starlight Systems,Enterprise,Energy & Utilities,Lyon,Rhone,France,7
+21,Dynamic Media,Strategic Key Account,FinTech & Banking,Osaka,Kansai,Japan,9
+22,Horizon Aerospace,SMB,Telecommunications,Osaka,Kansai,Japan,9
+23,Horizon Retail Group,Mid-Market,Government & Education,Paris,Ile-de-France,France,7
+24,Cyber Systems,Strategic Key Account,Government & Education,Minneapolis,Minnesota,USA,3
+25,Cyber Consulting,Mid-Market,Manufacturing,Toronto,Ontario,Canada,4
+26,Ironclad Systems,Mid-Market,Professional Services,Tokyo,Kanto,Japan,9
+27,Apex Financial,Enterprise,Retail & E-Commerce,Munich,Bavaria,Germany,6
+28,Summit Financial,Mid-Market,Healthcare & Pharma,Atlanta,Georgia,USA,2
+29,Ironclad Systems,Mid-Market,Manufacturing,Chicago,Illinois,USA,3
+30,Nexus BioTech,Strategic Key Account,Retail & E-Commerce,Rio de Janeiro,Rio de Janeiro,Brazil,10
+31,Solstice Solutions,SMB,Professional Services,Munich,Bavaria,Germany,6
+32,Horizon Healthcare,Mid-Market,Retail & E-Commerce,Toronto,Ontario,Canada,4
+33,Summit Healthcare,SMB,FinTech & Banking,San Francisco,California,USA,1
+34,Beacon Financial,Enterprise,Retail & E-Commerce,Seattle,Washington,USA,1
+35,Nexus Aerospace,Mid-Market,Professional Services,Sydney,New South Wales,Australia,8
+36,Beacon Systems,Enterprise,Healthcare & Pharma,Melbourne,Victoria,Australia,8
+37,Terra Energy,Mid-Market,FinTech & Banking,Brussels,Brussels,Belgium,7
+38,Horizon Technologies,Mid-Market,Healthcare & Pharma,Lyon,Rhone,France,7
+39,Beacon Healthcare,Mid-Market,Energy & Utilities,Montreal,Quebec,Canada,4
+40,Starlight Retail Group,SMB,Healthcare & Pharma,Sydney,New South Wales,Australia,8
+41,Aero Systems,Enterprise,FinTech & Banking,Tokyo,Kanto,Japan,9
+42,Quantum Robotics,Mid-Market,Professional Services,Toronto,Ontario,Canada,4
+43,Atlas Holdings,Enterprise,FinTech & Banking,Paris,Ile-de-France,France,7
+44,BlueWave Retail Group,Mid-Market,Professional Services,Melbourne,Victoria,Australia,8
+45,Pinnacle Healthcare,Strategic Key Account,FinTech & Banking,London,Greater London,UK,5
+46,Vanguard Technologies,Mid-Market,Manufacturing,Los Angeles,California,USA,1
+47,Vertex BioTech,Enterprise,Healthcare & Pharma,New York,New York,USA,2
+48,Beacon Solutions,Enterprise,FinTech & Banking,Atlanta,Georgia,USA,2
+49,Dynamic Financial,Mid-Market,Telecommunications,Lyon,Rhone,France,7
+50,Nexus Healthcare,Mid-Market,Manufacturing,Frankfurt,Hesse,Germany,6
+51,Solstice Media,Enterprise,Healthcare & Pharma,Frankfurt,Hesse,Germany,6
+52,Quantum BioTech,Mid-Market,Telecommunications,Montreal,Quebec,Canada,4
+53,Quantum Robotics,Mid-Market,Professional Services,Vancouver,British Columbia,Canada,4
+54,Ironclad Global,Strategic Key Account,FinTech & Banking,Edinburgh,Midlothian,UK,5
+55,Ironclad Retail Group,Mid-Market,Healthcare & Pharma,New York,New York,USA,2
+56,Ironclad Logistics,Mid-Market,Telecommunications,Manchester,Greater Manchester,UK,5
+57,Atlas Aerospace,Mid-Market,FinTech & Banking,Edinburgh,Midlothian,UK,5
+58,Quantum Aerospace,Enterprise,Telecommunications,Brussels,Brussels,Belgium,7
+59,Pinnacle Aerospace,SMB,Energy & Utilities,London,Greater London,UK,5
+60,Ironclad Technologies,Strategic Key Account,Manufacturing,New York,New York,USA,2
+61,Ironclad Technologies,Mid-Market,Energy & Utilities,Zurich,Zurich,Switzerland,6
+62,Pinnacle Technologies,SMB,FinTech & Banking,Manchester,Greater Manchester,UK,5
+63,Crestview Healthcare,Enterprise,Energy & Utilities,Montreal,Quebec,Canada,4
+64,Dynamic Global,SMB,Manufacturing,Chicago,Illinois,USA,3
+65,Terra Technologies,Strategic Key Account,Energy & Utilities,Minneapolis,Minnesota,USA,3
+66,Beacon Retail Group,Enterprise,FinTech & Banking,Minneapolis,Minnesota,USA,3
+67,Pulse Healthcare,Mid-Market,Retail & E-Commerce,Vancouver,British Columbia,Canada,4
+68,Beacon Technologies,Mid-Market,Healthcare & Pharma,Vancouver,British Columbia,Canada,4
+69,Nexus Energy,Mid-Market,Telecommunications,Osaka,Kansai,Japan,9
+70,Apex Financial,Mid-Market,Government & Education,London,Greater London,UK,5
+71,Vertex Financial,Mid-Market,Telecommunications,Rio de Janeiro,Rio de Janeiro,Brazil,10
+72,Terra Consulting,Mid-Market,Retail & E-Commerce,Tokyo,Kanto,Japan,9
+73,Nexus Technologies,Mid-Market,Retail & E-Commerce,Paris,Ile-de-France,France,7
+74,Crestview Solutions,Strategic Key Account,Telecommunications,Atlanta,Georgia,USA,2
+75,Horizon Global,Mid-Market,Energy & Utilities,Edinburgh,Midlothian,UK,5
+76,Vanguard Solutions,Enterprise,Energy & Utilities,Edinburgh,Midlothian,UK,5
+77,BlueWave Aerospace,Mid-Market,Energy & Utilities,Minneapolis,Minnesota,USA,3
+78,Ironclad Holdings,Mid-Market,Energy & Utilities,Seattle,Washington,USA,1
+79,Summit Consulting,Mid-Market,Retail & E-Commerce,Munich,Bavaria,Germany,6
+80,Cyber Media,Enterprise,Telecommunications,Minneapolis,Minnesota,USA,3
+81,Quantum Holdings,Mid-Market,Retail & E-Commerce,Montreal,Quebec,Canada,4
+82,Pinnacle Technologies,Strategic Key Account,Healthcare & Pharma,San Francisco,California,USA,1
+83,Aero Solutions,SMB,Energy & Utilities,Sao Paulo,Sao Paulo,Brazil,10
+84,Pulse Solutions,Mid-Market,FinTech & Banking,Toronto,Ontario,Canada,4
+85,Horizon Systems,Enterprise,Professional Services,Paris,Ile-de-France,France,7
+86,Vertex BioTech,Mid-Market,Professional Services,Toronto,Ontario,Canada,4
+87,Cyber BioTech,Strategic Key Account,Professional Services,Rio de Janeiro,Rio de Janeiro,Brazil,10
+88,Dynamic Holdings,SMB,Professional Services,Osaka,Kansai,Japan,9
+89,Starlight Global,Mid-Market,Retail & E-Commerce,Melbourne,Victoria,Australia,8
+90,Nexus Systems,Mid-Market,Government & Education,Osaka,Kansai,Japan,9
+91,Aero Financial,Mid-Market,Telecommunications,London,Greater London,UK,5
+92,Ironclad Financial,Enterprise,Manufacturing,Chicago,Illinois,USA,3
+93,Atlas Financial,Mid-Market,Professional Services,Brussels,Brussels,Belgium,7
+94,Terra Technologies,Mid-Market,FinTech & Banking,Vancouver,British Columbia,Canada,4
+95,Summit Solutions,Strategic Key Account,Government & Education,Sydney,New South Wales,Australia,8
+96,BlueWave Holdings,SMB,Retail & E-Commerce,Lyon,Rhone,France,7
+97,Pulse Healthcare,Mid-Market,Energy & Utilities,Manchester,Greater Manchester,UK,5
+98,Vanguard Aerospace,Enterprise,Professional Services,Lyon,Rhone,France,7
+99,Pinnacle Consulting,Strategic Key Account,FinTech & Banking,Tokyo,Kanto,Japan,9
+100,Quantum Aerospace,SMB,Manufacturing,Paris,Ile-de-France,France,7
+101,Vertex Retail Group,Enterprise,Telecommunications,Brussels,Brussels,Belgium,7
+102,Vanguard Systems,SMB,Energy & Utilities,Brussels,Brussels,Belgium,7
+103,Nexus Holdings,Enterprise,FinTech & Banking,Boston,Massachusetts,USA,2
+104,Crestview Healthcare,Enterprise,FinTech & Banking,Atlanta,Georgia,USA,2
+105,Beacon Healthcare,Enterprise,Manufacturing,Los Angeles,California,USA,1
+106,Pulse Aerospace,Strategic Key Account,Professional Services,Atlanta,Georgia,USA,2
+107,Nexus Systems,Mid-Market,Healthcare & Pharma,Frankfurt,Hesse,Germany,6
+108,Starlight Retail Group,Enterprise,Government & Education,Atlanta,Georgia,USA,2
+109,Summit Aerospace,Strategic Key Account,Retail & E-Commerce,Brussels,Brussels,Belgium,7
+110,Quantum Consulting,Mid-Market,Government & Education,Toronto,Ontario,Canada,4
+111,Dynamic Systems,SMB,Telecommunications,Atlanta,Georgia,USA,2
+112,Ironclad Solutions,Mid-Market,Telecommunications,Frankfurt,Hesse,Germany,6
+113,Apex Holdings,Enterprise,Telecommunications,Brussels,Brussels,Belgium,7
+114,Aero Global,Enterprise,Government & Education,Dallas,Texas,USA,3
+115,Dynamic Systems,Mid-Market,Government & Education,Osaka,Kansai,Japan,9
+116,Vanguard Holdings,Mid-Market,Professional Services,Toronto,Ontario,Canada,4
+117,Beacon Systems,Mid-Market,Energy & Utilities,Brisbane,Queensland,Australia,8
+118,Vanguard Technologies,Enterprise,Retail & E-Commerce,Melbourne,Victoria,Australia,8
+119,Crestview Systems,Mid-Market,Government & Education,Manchester,Greater Manchester,UK,5
+120,Ironclad Technologies,Enterprise,Energy & Utilities,Tokyo,Kanto,Japan,9
+121,Pulse BioTech,Mid-Market,Professional Services,Montreal,Quebec,Canada,4
+122,Aero Systems,Mid-Market,Energy & Utilities,San Francisco,California,USA,1
+123,Beacon Retail Group,Mid-Market,Telecommunications,Rio de Janeiro,Rio de Janeiro,Brazil,10
+124,Terra Global,Mid-Market,Professional Services,Osaka,Kansai,Japan,9
+125,Nexus Retail Group,Enterprise,Retail & E-Commerce,London,Greater London,UK,5
+126,Vanguard Financial,Enterprise,Retail & E-Commerce,Seoul,Gyeonggi,South Korea,9
+127,Pulse Retail Group,Mid-Market,Healthcare & Pharma,Bogota,Cundinamarca,Colombia,10
+128,Atlas Retail Group,Enterprise,FinTech & Banking,Vancouver,British Columbia,Canada,4
+129,Ironclad Logistics,Strategic Key Account,Government & Education,London,Greater London,UK,5
+130,Pinnacle Aerospace,SMB,Government & Education,Sydney,New South Wales,Australia,8
+131,Pulse Media,Enterprise,FinTech & Banking,Melbourne,Victoria,Australia,8
+132,Nexus Holdings,SMB,Energy & Utilities,Sydney,New South Wales,Australia,8
+133,Pulse Financial,Mid-Market,Manufacturing,Bogota,Cundinamarca,Colombia,10
+134,Pinnacle Systems,Enterprise,Retail & E-Commerce,Rio de Janeiro,Rio de Janeiro,Brazil,10
+135,Horizon BioTech,Mid-Market,Retail & E-Commerce,Lyon,Rhone,France,7
+136,Cyber Solutions,Mid-Market,Energy & Utilities,Melbourne,Victoria,Australia,8
+137,Solstice Consulting,Mid-Market,Healthcare & Pharma,Sao Paulo,Sao Paulo,Brazil,10
+138,Atlas Aerospace,Mid-Market,Manufacturing,Vancouver,British Columbia,Canada,4
+139,Beacon Logistics,Enterprise,Energy & Utilities,Tokyo,Kanto,Japan,9
+140,Aero Global,Mid-Market,Retail & E-Commerce,Rio de Janeiro,Rio de Janeiro,Brazil,10
+141,Solstice Global,SMB,Healthcare & Pharma,Edinburgh,Midlothian,UK,5
+142,Beacon Robotics,Mid-Market,Retail & E-Commerce,Edinburgh,Midlothian,UK,5
+143,Terra Financial,Mid-Market,Government & Education,Tokyo,Kanto,Japan,9
+144,Pinnacle Financial,SMB,Government & Education,San Francisco,California,USA,1
+145,Aero Financial,Mid-Market,Energy & Utilities,Brisbane,Queensland,Australia,8
+146,Nexus BioTech,Mid-Market,FinTech & Banking,Osaka,Kansai,Japan,9
+147,Terra Global,Mid-Market,Healthcare & Pharma,Zurich,Zurich,Switzerland,6
+148,Beacon Aerospace,Strategic Key Account,Government & Education,Bogota,Cundinamarca,Colombia,10
+149,Summit Technologies,Mid-Market,Professional Services,Dallas,Texas,USA,3
+150,Nexus Logistics,Mid-Market,Professional Services,Rio de Janeiro,Rio de Janeiro,Brazil,10
+151,Quantum Media,Mid-Market,Healthcare & Pharma,Munich,Bavaria,Germany,6
+152,Starlight Energy,Mid-Market,Energy & Utilities,Lyon,Rhone,France,7
+153,Ironclad Technologies,Mid-Market,Telecommunications,Sydney,New South Wales,Australia,8
+154,Horizon Systems,SMB,FinTech & Banking,Lyon,Rhone,France,7
+155,Ironclad Media,Enterprise,Telecommunications,Paris,Ile-de-France,France,7
+156,Dynamic Systems,Mid-Market,FinTech & Banking,Brisbane,Queensland,Australia,8
+157,Atlas Retail Group,Strategic Key Account,Professional Services,Tokyo,Kanto,Japan,9
+158,Pulse Financial,Mid-Market,Retail & E-Commerce,Los Angeles,California,USA,1
+159,Starlight Retail Group,Mid-Market,Healthcare & Pharma,Tokyo,Kanto,Japan,9
+160,Beacon Holdings,Strategic Key Account,Manufacturing,Boston,Massachusetts,USA,2
+161,Pulse Robotics,SMB,Energy & Utilities,Edinburgh,Midlothian,UK,5
+162,Pulse Media,Mid-Market,Energy & Utilities,Vancouver,British Columbia,Canada,4
+163,Atlas Robotics,SMB,Manufacturing,Bogota,Cundinamarca,Colombia,10
+164,Quantum Retail Group,Strategic Key Account,Government & Education,Brussels,Brussels,Belgium,7
+165,Apex Retail Group,Mid-Market,Professional Services,Edinburgh,Midlothian,UK,5
+166,Pinnacle Media,Mid-Market,Energy & Utilities,Osaka,Kansai,Japan,9
+167,Aero Robotics,Strategic Key Account,Retail & E-Commerce,Frankfurt,Hesse,Germany,6
+168,Summit Solutions,Enterprise,Professional Services,Vancouver,British Columbia,Canada,4
+169,BlueWave Solutions,Strategic Key Account,Manufacturing,Dallas,Texas,USA,3
+170,Cyber Consulting,SMB,Professional Services,Frankfurt,Hesse,Germany,6
+171,Horizon BioTech,SMB,Energy & Utilities,Sydney,New South Wales,Australia,8
+172,Pinnacle Financial,Mid-Market,Energy & Utilities,Melbourne,Victoria,Australia,8
+173,Quantum Holdings,SMB,Energy & Utilities,Zurich,Zurich,Switzerland,6
+174,Vanguard Aerospace,Enterprise,Healthcare & Pharma,Brisbane,Queensland,Australia,8
+175,Beacon Aerospace,SMB,Energy & Utilities,London,Greater London,UK,5
+176,Horizon Systems,Enterprise,Government & Education,Boston,Massachusetts,USA,2
+177,Apex Technologies,Mid-Market,Telecommunications,Frankfurt,Hesse,Germany,6
+178,Terra Logistics,Mid-Market,Manufacturing,Montreal,Quebec,Canada,4
+179,Starlight Logistics,SMB,Retail & E-Commerce,Atlanta,Georgia,USA,2
+180,Pulse Robotics,Enterprise,Government & Education,Sao Paulo,Sao Paulo,Brazil,10
+181,Aero Retail Group,Strategic Key Account,Manufacturing,Seattle,Washington,USA,1
+182,Quantum Media,Mid-Market,Energy & Utilities,Zurich,Zurich,Switzerland,6
+183,Nexus Media,Strategic Key Account,Professional Services,London,Greater London,UK,5
+184,Horizon Healthcare,Mid-Market,Government & Education,Lyon,Rhone,France,7
+185,Solstice Technologies,Enterprise,FinTech & Banking,Brussels,Brussels,Belgium,7
+186,Dynamic Global,SMB,Retail & E-Commerce,Melbourne,Victoria,Australia,8
+187,Dynamic Systems,Mid-Market,Government & Education,Frankfurt,Hesse,Germany,6
+188,Pinnacle Aerospace,Mid-Market,Government & Education,Atlanta,Georgia,USA,2
+189,Aero Technologies,SMB,Healthcare & Pharma,Rio de Janeiro,Rio de Janeiro,Brazil,10
+190,Solstice Energy,Enterprise,Telecommunications,Paris,Ile-de-France,France,7
+191,Cyber BioTech,Mid-Market,Professional Services,London,Greater London,UK,5
+192,Solstice Global,Mid-Market,Healthcare & Pharma,Frankfurt,Hesse,Germany,6
+193,Pinnacle Systems,SMB,Energy & Utilities,Montreal,Quebec,Canada,4
+194,Ironclad Energy,Enterprise,Healthcare & Pharma,Boston,Massachusetts,USA,2
+195,Aero Energy,Mid-Market,Telecommunications,Edinburgh,Midlothian,UK,5
+196,Horizon Aerospace,Enterprise,Telecommunications,Vancouver,British Columbia,Canada,4
+197,Dynamic Healthcare,SMB,Government & Education,Atlanta,Georgia,USA,2
+198,Terra Financial,Strategic Key Account,Government & Education,Chicago,Illinois,USA,3
+199,Pulse Financial,SMB,Manufacturing,New York,New York,USA,2
+200,BlueWave Media,Strategic Key Account,Energy & Utilities,Zurich,Zurich,Switzerland,6
+201,Summit Global,Mid-Market,Professional Services,Dallas,Texas,USA,3
+202,Dynamic Solutions,Mid-Market,Retail & E-Commerce,London,Greater London,UK,5
+203,Aero Media,Enterprise,Telecommunications,Vancouver,British Columbia,Canada,4
+204,Ironclad Robotics,Mid-Market,Retail & E-Commerce,Frankfurt,Hesse,Germany,6
+205,Horizon Holdings,Mid-Market,FinTech & Banking,Sydney,New South Wales,Australia,8
+206,Vertex Systems,Strategic Key Account,Retail & E-Commerce,Frankfurt,Hesse,Germany,6
+207,Quantum Holdings,Mid-Market,Retail & E-Commerce,Tokyo,Kanto,Japan,9
+208,Vanguard Systems,Enterprise,Manufacturing,Minneapolis,Minnesota,USA,3
+209,Pinnacle BioTech,Enterprise,FinTech & Banking,London,Greater London,UK,5
+210,Pinnacle Technologies,Mid-Market,FinTech & Banking,Frankfurt,Hesse,Germany,6
+211,Starlight Retail Group,SMB,Healthcare & Pharma,San Francisco,California,USA,1
+212,Quantum Media,Mid-Market,Healthcare & Pharma,Melbourne,Victoria,Australia,8
+213,Aero BioTech,Enterprise,Government & Education,Montreal,Quebec,Canada,4
+214,Aero Aerospace,Strategic Key Account,Energy & Utilities,San Francisco,California,USA,1
+215,Terra Aerospace,SMB,Professional Services,Boston,Massachusetts,USA,2
+216,Quantum Robotics,Mid-Market,Healthcare & Pharma,Boston,Massachusetts,USA,2
+217,Pinnacle Retail Group,Mid-Market,Telecommunications,Bogota,Cundinamarca,Colombia,10
+218,BlueWave Consulting,Mid-Market,Energy & Utilities,Osaka,Kansai,Japan,9
+219,Horizon Systems,Mid-Market,Retail & E-Commerce,Atlanta,Georgia,USA,2
+220,Terra Media,Mid-Market,Professional Services,Vancouver,British Columbia,Canada,4
+221,BlueWave Solutions,Mid-Market,Government & Education,Boston,Massachusetts,USA,2
+222,Crestview Logistics,Enterprise,Healthcare & Pharma,Sydney,New South Wales,Australia,8
+223,Quantum Solutions,SMB,Manufacturing,Atlanta,Georgia,USA,2
+224,Ironclad Technologies,Mid-Market,Healthcare & Pharma,Bogota,Cundinamarca,Colombia,10
+225,Terra Energy,Enterprise,Government & Education,Lyon,Rhone,France,7
+226,Dynamic Retail Group,Mid-Market,Retail & E-Commerce,Frankfurt,Hesse,Germany,6
+227,Pinnacle Aerospace,SMB,Telecommunications,Sydney,New South Wales,Australia,8
+228,Ironclad Energy,Mid-Market,Energy & Utilities,Boston,Massachusetts,USA,2
+229,Ironclad Systems,Mid-Market,FinTech & Banking,Bogota,Cundinamarca,Colombia,10
+230,Dynamic Robotics,Enterprise,Government & Education,London,Greater London,UK,5
+231,Vanguard Energy,SMB,Energy & Utilities,San Francisco,California,USA,1
+232,Quantum Logistics,SMB,Retail & E-Commerce,San Francisco,California,USA,1
+233,BlueWave Solutions,Enterprise,Government & Education,Melbourne,Victoria,Australia,8
+234,Vanguard Systems,Enterprise,FinTech & Banking,Bogota,Cundinamarca,Colombia,10
+235,Pinnacle Logistics,Mid-Market,Government & Education,Sao Paulo,Sao Paulo,Brazil,10
+236,Aero Aerospace,Mid-Market,Energy & Utilities,Brussels,Brussels,Belgium,7
+237,Nexus Healthcare,Mid-Market,Healthcare & Pharma,Tokyo,Kanto,Japan,9
+238,Solstice Aerospace,Mid-Market,Government & Education,Rio de Janeiro,Rio de Janeiro,Brazil,10
+239,Vertex Healthcare,Enterprise,Retail & E-Commerce,Lyon,Rhone,France,7
+240,Solstice Healthcare,Mid-Market,Healthcare & Pharma,Dallas,Texas,USA,3
+241,Apex Media,Enterprise,Retail & E-Commerce,Paris,Ile-de-France,France,7
+242,Cyber BioTech,Mid-Market,FinTech & Banking,Frankfurt,Hesse,Germany,6
+243,Terra Technologies,SMB,Energy & Utilities,Sydney,New South Wales,Australia,8
+244,Summit Solutions,Enterprise,FinTech & Banking,Brussels,Brussels,Belgium,7
+245,Vanguard Logistics,SMB,Telecommunications,Rio de Janeiro,Rio de Janeiro,Brazil,10
+246,Quantum Solutions,Mid-Market,Energy & Utilities,New York,New York,USA,2
+247,Cyber Financial,SMB,Retail & E-Commerce,Brussels,Brussels,Belgium,7
+248,Vanguard Systems,Mid-Market,Healthcare & Pharma,Chicago,Illinois,USA,3
+249,Cyber BioTech,Mid-Market,Manufacturing,Vancouver,British Columbia,Canada,4
+250,Beacon Financial,Enterprise,Manufacturing,Dallas,Texas,USA,3

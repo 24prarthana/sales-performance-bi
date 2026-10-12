@@ -1,0 +1,11 @@
+TerritoryID,Region,Country,SalesGroup
+1,US West,United States,North America
+2,US East,United States,North America
+3,US Central,United States,North America
+4,Canada,Canada,North America
+5,United Kingdom,United Kingdom,Europe
+6,DACH (Germany/Austria/CH),Germany,Europe
+7,France & Benelux,France,Europe
+8,Australia & NZ,Australia,Asia Pacific
+9,Japan & Korea,Japan,Asia Pacific
+10,Latin America,Brazil,Latin America

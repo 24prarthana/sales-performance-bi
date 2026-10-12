@@ -1,0 +1,22 @@
+ProductID,SKU,ProductName,Category,SubCategory,StandardCost,ListPrice,Status
+1,HW-101,Enterprise Rack Server Apex R7,Hardware,Servers,4200.0,6800.0,Active
+2,HW-102,Compact Edge Gateway G3,Hardware,Networking,650.0,1150.0,Active
+3,HW-103,Core Layer-3 48-Port Switch,Hardware,Networking,1850.0,3100.0,Active
+4,HW-104,Enterprise All-Flash SAN Storage 12TB,Hardware,Storage,8500.0,14200.0,Active
+5,HW-105,High-Density Blade Enclosure,Hardware,Servers,5200.0,8900.0,Active
+6,SW-201,Nexus Cloud Security Suite (Annual),Software,Cybersecurity,1800.0,4200.0,Active
+7,SW-202,OmniData Analytics Platform (User/Yr),Software,Analytics,850.0,2400.0,Active
+8,SW-203,Synapse ERP Enterprise License,Software,Enterprise Apps,12000.0,28000.0,Active
+9,SW-204,WorkFlow Orchestrator Pro,Software,Productivity,400.0,1100.0,Active
+10,SW-205,Zero-Trust Identity Access Guard,Software,Cybersecurity,950.0,2600.0,Active
+11,CS-301,Managed Hybrid Cloud Hosting (Tier 1),Cloud Services,Infrastructure,2100.0,4500.0,Active
+12,CS-302,Disaster Recovery As-A-Service (DRaaS),Cloud Services,Backup & Recovery,1400.0,3200.0,Active
+13,CS-303,Kubernetes Multi-Cluster Management,Cloud Services,DevOps,900.0,2150.0,Active
+14,CS-304,AI Inference API Gateway Tier,Cloud Services,AI & ML,1600.0,3800.0,Active
+15,PS-401,Enterprise Architecture Audit (40 Hrs),Professional Services,Consulting,4000.0,8500.0,Active
+16,PS-402,Cloud Migration Implementation Package,Professional Services,Implementation,7500.0,16000.0,Active
+17,PS-403,Cybersecurity Penetration Test & Remediation,Professional Services,Consulting,5000.0,11000.0,Active
+18,PS-404,Custom BI Dashboard & Data Pipeline Dev,Professional Services,Development,3800.0,9200.0,Active
+19,PE-501,Redundant 1200W Titanium Power Supply,Peripherals,Components,180.0,380.0,Active
+20,PE-502,High-Speed SFP+ 10Gb Optical Transceiver 4-Pack,Peripherals,Networking Accessories,120.0,290.0,Active
+21,PE-503,Hot-Swap NVMe 3.84TB Enterprise SSD,Peripherals,Storage Accessories,450.0,950.0,Active

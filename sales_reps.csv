@@ -1,0 +1,16 @@
+SalesRepID,FirstName,LastName,Email,Title,TerritoryID,HireDate,QuotaTargetBase
+101,Marcus,Vance,marcus.vance@company.com,Senior Enterprise Account Exec,1,2021-03-15,5200000
+102,Sarah,Chen,sarah.chen@company.com,Enterprise Account Exec,1,2022-06-01,4500000
+103,David,Miller,david.miller@company.com,Regional Sales Director,2,2020-01-10,6200000
+104,Elena,Rostova,elena.rostova@company.com,Senior Enterprise Account Exec,2,2021-08-20,5400000
+105,James,Wilson,james.wilson@company.com,Mid-Market Account Exec,3,2022-11-05,3800000
+106,Chloe,Tremblay,chloe.tremblay@company.com,Country Manager Canada,4,2021-05-12,4800000
+107,Oliver,Smith,oliver.smith@company.com,UK Sales Director,5,2020-04-18,5600000
+108,Emma,Watson,emma.watson@company.com,Enterprise Account Exec,5,2022-02-14,4200000
+109,Lucas,Mueller,lucas.mueller@company.com,DACH Regional Lead,6,2021-09-01,5500000
+110,Hannah,Weber,hannah.weber@company.com,Mid-Market Account Exec,6,2023-01-15,3600000
+111,Julien,Dupont,julien.dupont@company.com,France Sales Lead,7,2021-10-10,4600000
+112,Liam,O'Connor,liam.oconnor@company.com,APAC Regional Director,8,2020-07-01,6000000
+113,Mia,Tanaka,mia.tanaka@company.com,Senior Enterprise Account Exec,9,2021-12-01,5100000
+114,Gabriel,Silva,gabriel.silva@company.com,LatAm Commercial Lead,10,2022-04-15,4000000
+115,Aria,Patel,aria.patel@company.com,Strategic Accounts Executive,3,2022-08-11,5000000
